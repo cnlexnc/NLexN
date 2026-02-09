@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friends - NLexN</title>
+<style>
+    body {
+        background-color: #333333; /* soft white background */
+        font-family: 'Courier New', monospace;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .friend-card {
+        border: 1px solid black; /* thin outer line */
+        width: 450px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 233, 233);
+    }
+
+    .friend-card img {
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Button placed below the card */
+    .friend-button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(80, 78, 78);
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .friend-button:hover {
+        background-color: #e0e0e0;
+    }
+
+    /* Container to group card and button together */
+    .friend-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .moving-link {
+  background: repeating-linear-gradient(
+    90deg,
+    rgb(71, 197, 197) 0%,
+    white 25%,
+    black 50%,
+    rgb(44, 211, 223) 75%,
+    white 100%
+  );
+  background-size: 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: bw-move 10s linear infinite;
+  text-decoration: underline;
+}
+
+@keyframes bw-move {
+  from { background-position: 0% 50%; }
+  to   { background-position: 200% 50%; }
+}
+
+</style>
+</head>
+<body>
+
+    <!-- Friend 1 -->
+    <div class="friend-container">
+        <div class="friend-card">
+            <img src="image.png" alt="Noskaja">
+        </div>
+        <button class="friend-button" onclick="window.location.href='">Visit Website</button>
+        <a href="index.html" class="moving-link">Back to Homepage</a>
+    </div>
+
+
+</body>
+</html>
