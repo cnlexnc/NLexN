@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 40px 20px;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.gallery-item {
+    width: 50%;
+}
+
+.gallery-item:nth-child(even) {
+    margin-left: auto;
+}
+
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .image-container {
+            width: 100%;
+            height: 300px;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .caption {
+            font-size: 16px;
+            color: #fff;
+            line-height: 1.5;
+            border: 1px solid #fff;
+            padding: 10px 15px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="gallery-container">
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/duylzijlx/image/upload/DSC05023_hm24mk" alt="Photo">
+                </div>
+                <p class="caption">When I came across the hobby of people watching, I thought it was the weirdest thing a person could do with their life. Why would you focus on others when you have your own life to live? Envy was the word that came to mind when I first began to understand the concept of people watching. Now disregard everything I just said. People-watching is one of, if not the most useful, tools for predicting the actions of people you meet. </p>
+            </div>
+
+            <div class="gallery-item">
+                <div class="image-container">
+                    <img src="https://res.cloudinary.com/duylzijlx/image/upload/DSC05253_n7uguj" alt="Photo">
+                </div>
+                <p class="caption">When I walk into any library on my campus, the feeling of dread overpowers any other feeling I might want to have other than dread. I imagine any library as a forest. I'm not environmentally friendly in any way, but seeing libraries and imagining the forests it could be scares me a lot.  </p>
+            </div>
+
+            
+
+        </div>
+    </div>
 </body>
+
 </html>
